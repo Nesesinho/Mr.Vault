@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title-box">
+        <h1 class="title">Mr.Nese Vault</h1>
+    </div>
+    
+    <div class="vault">
+        <img id="vault-inside" class="vault-img" src="">
+        <img id="porta-d" class="vault-img" src="./images/porta_d.png">
+        <img id="porta-e" class="vault-img" src="./images/porta_e.png">
+        <img id="escotilha-1" class="vault-img" src="./images/escotilha.png">
+        <img id="escotilha-2" class="hatch" src="./images/Nhee.png">
+    </div>
+
+    <div>
+        
+    </div>
+    <div class="password-box">
+        <form name="password">
+            <input type="text" readonly class="value" name="txt" placeholder="Enter Code">
+            <div class="block hidden">
+                <img src="./images/corrente.png">
+                <img class="chain-right" src="./images/corrente.png">
+            </div>
+            <div class="grid">
+                <span class="num" onclick="password.txt.value += '1'">1</span>
+                <span class="num" onclick="password.txt.value += '2'">2</span>
+                <span class="num" onclick="password.txt.value += '3'">3</span>
+                <span class="num" onclick="password.txt.value += '4'">4</span>
+                <span class="num" onclick="password.txt.value += '5'">5</span>
+                <span class="num" onclick="password.txt.value += '6'">6</span>
+                <span class="num" onclick="password.txt.value += '7'">7</span>
+                <span class="num" onclick="password.txt.value += '8'">8</span>
+                <span class="num" onclick="password.txt.value += '9'">9</span>
+            </div>
+            <div class="extrabtn">
+                <span id="enter">Enter</span>
+                <span class="num" onclick="password.txt.value += '0'">0</span>
+                <span id="del" onclick="password.txt.value = ''">☓</span>
+            </div>
+            <div class="closerbtn">
+                <span id="close" class="close">close</span>
+            </div>
+            
+        </form>
+    </div>
+    
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>

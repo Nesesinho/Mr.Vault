@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: Arial;
+    background-image: url(../images/wood.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    color: #d3e0ea;
+}
+
+.title-box {
+    width: 10rem;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    border: 5px solid rgb(32, 31, 31);
+    background-color: rgb(48, 45, 45);
+    padding: 10px;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.vault {
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    border: 10px solid rgb(70, 70, 70);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    background-color: rgb(49, 49, 49);
+}
+
+.vault-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 4s ease-in-out;
+}
+
+#escotilha-1 {
+    left: 0.20rem;
+}
+
+#porta-e {
+    width: 101%;
+}
+
+.openLeft {
+    transform: translateX(-100%);
+}
+
+.openRight {
+    transform: translateX(200%);
+}
+
+#escotilha-2.openRight.hatch {
+    transform: translateX(200%);
+}
+
+#escotilha-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(1000deg);
+    transition: all 4s ease-in-out;
+}
+
+#escotilha-2.rotate {
+    transform: none;
+}
+
+.password-box {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 80%;
+    transform: translate(-20%,-50%);
+    border: 5px solid rgb(32, 31, 31);
+    background-color: rgb(48, 45, 45);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.value {
+    height: 3rem;
+    margin: .3rem;
+    background-color: rgb(216, 216, 216);
+    font-family: "Press Start 2P";
+    padding: .5rem;
+}
+
+.value-error {
+    background-color: rgb(143, 0, 0);
+}
+
+.value-error::placeholder {
+    color: black;
+}
+
+.value-right {
+    background-color: rgb(0, 109, 0);
+}
+
+.value-right::placeholder {
+    color: black;
+}
+
+.block {
+    position: absolute;
+    width: 100%;
+    height: 13rem;
+    overflow: hidden;
+}
+
+.block * {
+    -webkit-user-drag: none;
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    left: .3rem;
+    bottom: 1px;
+}
+
+.chain-right {
+    transform: rotate(74deg);
+    top: .2px;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.num {
+    padding: 1em;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(32, 31, 31);
+    border: 2px solid rgb(48, 45, 45);
+}
+
+.num:hover {
+    background-color: rgb(71, 69, 69);
+}
+
+.num:active {
+    background-color: rgb(32, 31, 31);
+}
+
+.extrabtn {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    text-align: center;
+}
+
+.extrabtn * {
+    padding: 1rem;
+    background-color: rgb(32, 31, 31);
+    border: 2px solid rgb(48, 45, 45);
+}
+
+#del {
+    cursor: pointer;
+}
+
+#del:hover {
+    background-color: rgb(85, 25, 25);
+}
+
+#del:active {
+    background-color: rgb(97, 4, 4);
+}
+
+#enter {
+    cursor: pointer;
+}
+
+#enter:hover {
+    background-color: rgb(32, 68, 25);
+}
+
+#enter:active {
+    background-color: rgb(19, 88, 6);
+}
+
+.closerbtn {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    background-color: rgb(32, 31, 31);
+    border: 2px solid rgb(48, 45, 45);
+}
+
+#close {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#close:hover {
+    background: rgb(71, 69, 69);
+}
+
+#close:active {
+    background-color: rgb(32, 31, 31);
+}
